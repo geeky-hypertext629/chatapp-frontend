@@ -82,7 +82,7 @@ function Chat({socket,username,room}) {
         </ScrollToBottom>
     </div>
     <div className="chat-footer">
-        <input onKeyDown={(e)=>{e.key==='Enter' && sendMessage()}} type="text" placeholder='hey...' value={currentMessage} onChange={(e)=>{setCurrentMessage(e.target.value)}}/>
+        <input onKeyDown={(e)=>{e.key==='Enter' && sendMessage()}} type="text" placeholder='Enter Message Here...' value={currentMessage} onChange={(e)=>{setCurrentMessage(e.target.value)}}/>
         <button onClick={sendMessage}>&#9658;</button>
     </div>
     </div>
